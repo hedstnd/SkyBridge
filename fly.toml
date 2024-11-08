@@ -14,7 +14,7 @@ primary_region = "lhr"
   min_machines_running = 0
 
 [env]
-  SKYBRIDGE_BASEURL = "skybridge.fly.dev"
+  SKYBRIDGE_BASEURL = "jkeds-skybridge.fly.dev"
   SKYBRIDGE_SHOW_INDEX = true
   FLY_SWAP = true
 

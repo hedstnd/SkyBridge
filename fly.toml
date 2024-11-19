@@ -6,6 +6,9 @@
 app = "jkeds-skybridge"
 primary_region = "ewr"
 
+[build]
+image = "videah/skybridge/latest"
+
 [http_service]
   internal_port = 8080
   force_https = true
@@ -17,6 +20,10 @@ primary_region = "ewr"
   SKYBRIDGE_BASEURL = "jkeds-skybridge.fly.dev"
   SKYBRIDGE_SHOW_INDEX = true
   FLY_SWAP = true
+  SKYBRIDGE_SECRET = 'iO1dnnb9XDccq49+362/3gdhZTm2FtpbOp2grGu7K8M='
+  SKYBRIDGE_REQUIRE_AUTH_PASSWORD = true
+  SKYBRIDGE_AUTH_PASSWORD = 'z0eocAjYn2p4Or4Pm624FQ=='
+  SKYBRIDGE_ALLOW_BACKFILL = true
 
 [mounts]
   source="skybridge_data"
@@ -33,3 +40,8 @@ primary_region = "ewr"
   type = "requests"
   hard_limit = 999999
   soft_limit = 9999
+
+[[vm]]
+  memory = '256mb'
+  cpu_kind = 'shared'
+  cpus = 1

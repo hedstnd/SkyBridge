@@ -7,7 +7,7 @@ app = "jkeds-skybridge"
 primary_region = "ewr"
 
 [build]
-image = "videah/skybridge/latest"
+image = "videah/skybridge:latest"
 
 [http_service]
   internal_port = 8080

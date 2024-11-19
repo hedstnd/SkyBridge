@@ -4,7 +4,7 @@
 #
 
 app = "jkeds-skybridge"
-primary_region = "iad"
+primary_region = "lhr"
 
 [build]
 image = "videah/skybridge:latest"
